@@ -67,6 +67,26 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       document.getElementById('footer-container').innerHTML = data;
     });
+    fetch('policy.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('policy-container').innerHTML = data;
+    });
+    fetch('policy.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('policy2-container').innerHTML = data;
+    });
+    fetch('tou.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('tou-container').innerHTML = data;
+    });
+    fetch('tou.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('tou2-container').innerHTML = data;
+    });
 
   // Radio button logic
   const yesIcon = document.getElementById("yes-icon");
